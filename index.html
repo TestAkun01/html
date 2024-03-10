@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +12,21 @@
       rel="stylesheet"
     />
     <!-- Feather icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
     <!-- Title -->
-    <title>LonelyPoro</title>
+    <link rel="Shortcut icon" href="assets/TB Logo.png" />
+    <title>TrunoBook | Home</title>
   </head>
   <body>
     <!-- awal navbar -->
@@ -26,7 +34,7 @@
       <div class="navbar-extra">
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
-      <a href="#" class="navbar-logo">Lonely-<span>Poro</span></a>
+      <a href="#"><img src="assets/truno.png" class="navbar-logo" /></a>
       <form action="#" method="get" class="search-bar">
         <input
           type="text"
@@ -38,56 +46,153 @@
           <i data-feather="search"></i>
         </button>
       </form>
-      <dic class="navbar-extra">
-        <a href="#" id="user" class="user"><i data-feather="user"></i></a
-      ></dic>
-
+      <div class="navbar-extra">
+        <div class="navbar-toggle" id="dark-mode-toggle">
+          <i class="light-only" data-feather="moon"></i>
+          <i class="dark-only" data-feather="sun"></i>
+        </div>
+        <a href="Login.html" id="user" class="user">
+          <i data-feather="user"></i>
+        </a>
+      </div>
       <div class="navbar-nav">
-        <a href="#">Anime</a>
+        <a href="index.html">Home</a>
         <a href="#">Manga</a>
-        <a href="#">Community</a>
+        <a href="Forum.html">Community</a>
         <a href="#">Help</a>
       </div>
     </nav>
+
     <!-- akhir navbar -->
+    <!-- awal content-->
+    <nav>
+      <div class="nav-left">
+        <img src="assets/truno.png" alt="logo" />
+        <input type="text" placeholder="Cari TrunoBook" />
+      </div>
+      <div class="nav-mid">
+        <a href="#" class="active"> <i class="fa fa-home"></i> </a>
+        <a href="#"> <i class="fa fa-user-friends"></i> </a>
+        <a href="#"> <i class="fa fa-play-circle"></i> </a>
+        <a href="#"> <i class="fa fa-users"></i> </a>
+      </div>
+      <div class="nav-right">
+        <a href="#"> <i class="fa fa-grip"></i> </a>
+        <a href="#"> <i class="fa fa-bell"></i> </a>
+        <span class="profile"></span>
+      </div>
+    </nav>
 
-    <!-- awal content   -->
-
-    <!-- section 1 -->
-    <section class="section1" id="anime">
-      <main class="content">
-        <h1>Selamat datang di website Lonely-<span>Poro</span></h1>
-        <p>Tempat untuk mencari film ter-update bahasa indonesia</p>
-        <form action="#" method="get" class="form-login">
-          <input
-            type="text"
-            class="input-bar"
-            name="query"
-            placeholder="Alamat email"
-          />
-          <button type="submit" class="submit-btn">
-            <i data-feather="log-in"></i>
-          </button>
-        </form>
-      </main>
-    </section>
-    <!-- section 2 -->
-    <section class="section2">
-      <main>
-        <h1>test</h1>
-      </main>
-    </section>
-    <section class="section2">
-      <main>
-        <h1>test</h1>
-      </main>
-    </section>
-    <section class="section2">
-      <main>
-        <h1>test</h1>
-      </main>
-    </section>
-
+    <div class="container">
+      <div class="mid-panel">
+        <!--
+        <header class="pengumuman"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENT !!</header>
+        -->
+        <ul>
+          <div class="story-section">
+            <a href="https://otakudesu.cloud/anime/sousou-frieren-sub-indo/">
+              <div class="story">
+                <img src="assets/Frieren.png" alt="Frieren" />
+                <p class="name">Sousou no frieren</p>
+              </div>
+            </a>
+            <a
+              href="https://otakudesu.cloud/anime/kusuriya-hitorigoto-sub-indo/"
+            >
+              <div class="story">
+                <img src="assets/Maomao.jpg" alt="Frieren" />
+                <p class="name">Kusuriya no hitorigoto</p>
+              </div>
+            </a>
+            <a href="https://otakudesu.cloud/anime/shangri-frontier-sub-indo/">
+              <div class="story">
+                <img src="assets/Shangri-LA.jpg" alt="Frieren" />
+                <p class="name">Shangri-La Frontie</p>
+              </div>
+            </a>
+            <a href="https://otakudesu.cloud/anime/lycoris-subtitle-indonesia/">
+              <div class="story">
+                <img src="assets/lycoreco.jpg" alt="Frieren" />
+                <p class="name">Lycoris Recoil</p>
+              </div>
+            </a>
+            <a href="https://otakudesu.cloud/anime/chitrus-subtitle-indonesia/">
+              <div class="story">
+                <img src="assets/Citrus.jpg" alt="Frieren" />
+                <p class="name">Citrus.</p>
+              </div>
+            </a>
+            <a href="https://otakudesu.cloud/anime/jutsu-kaisen-sub-indo/">
+              <div class="story">
+                <img src="assets/2.jpg" alt="Frieren" />
+                <p class="name">Jujutsu Kaisen</p>
+              </div>
+            </a>
+            <a
+              href="https://otakudesu.cloud/anime/kimetsu-yaiba-subtitle-indonesia/"
+            >
+              <div class="story">
+                <img src="assets/1.jpg" alt="Frieren" />
+                <p class="name">Kimetsu no Yaiba</p>
+              </div>
+            </a>
+            <a
+              href="https://otakudesu.cloud/anime/boku-demia-subtitle-indonesia/"
+            >
+              <div class="story">
+                <img src="assets/4.jpg" alt="Frieren" />
+                <p class="name">Boku no Hero Academia</p>
+              </div>
+            </a>
+            <div class="story">
+              <img src="assets/5.jpg" alt="Frieren" />
+              <p class="name">Josee, the Tiger and the Fish</p>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="story-section">
+            <div class="story">
+              <img src="assets/6.jpg" alt="Frieren" />
+              <p class="name">Shingeki No Kyojin S4</p>
+            </div>
+            <div class="story">
+              <img src="assets/7.jpg" alt="Frieren" />
+              <p class="name">Sword Art Online</p>
+            </div>
+            <div class="story">
+              <img src="assets/8.jpg" alt="Frieren" />
+              <p class="name">higatsu wa Kimi no Uso</p>
+            </div>
+            <div class="story">
+              <img src="assets/gt.jpg" alt="Frieren" />
+              <p class="name">Golden Time</p>
+            </div>
+            <div class="story">
+              <img src="assets/knk.jpg" alt="Frieren" />
+              <p class="name">Koe no Katachi</p>
+            </div>
+            <div class="story">
+              <img src="assets/ny.JPG" alt="Frieren" />
+              <p class="name">Natsume Yuujinchou</p>
+            </div>
+            <div class="story">
+              <img src="assets/o.jpg" alt="Frieren" />
+              <p class="name">Overlord</p>
+            </div>
+            <div class="story">
+              <img src="assets/Suzume_no_Tojimari_poster.jpg" alt="Frieren" />
+              <p class="name">Suzume no Tojimari</p>
+            </div>
+            <div class="story">
+              <img src="assets/ynn.jpg" alt="Frieren" />
+              <p class="name">Yakusoku no Neverland</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="right-panel"></div>
+    </div>
     <!-- akhir content -->
 
     <!-- script -->
